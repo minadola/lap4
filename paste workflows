@@ -1,1 +1,13 @@
-name: ci
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull-request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+jops:
+  build:
+    runs-on: ubuntu-latest
+    
